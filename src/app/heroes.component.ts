@@ -5,8 +5,8 @@ import { Router } from '@angular/router';
 
 @Component({
   	selector: 'my-heroes',
-	templateUrl: './heroes.component.html',
-	styleUrls: [ './heroes.component.css' ]
+	templateUrl: './templates/heroes.component.html',
+	styleUrls: [ './css/heroes.component.css' ]
 })
 export class HeroesComponent implements OnInit  { 
 	title = 'Tour of Heroes';

@@ -10,12 +10,14 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import { HeroSearchService } from './hero-search.service';
 import { Hero } from './hero';
+
 @Component({
   selector: 'hero-search',
-  templateUrl: './hero-search.component.html',
-  styleUrls: [ './hero-search.component.css' ],
+  templateUrl: './templates/hero-search.component.html',
+  styleUrls: [ './css/hero-search.component.css' ],
   providers: [HeroSearchService]
 })
+
 export class HeroSearchComponent implements OnInit {
   heroes: Observable<Hero[]>;
   private searchTerms = new Subject<string>();
