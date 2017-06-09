@@ -9,12 +9,12 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import { HeroSearchService } from './hero-search.service';
-import { Hero } from './hero';
+import { Hero } from '../hero/hero';
 
 @Component({
   selector: 'hero-search',
-  templateUrl: './templates/hero-search.component.html',
-  styleUrls: [ './css/hero-search.component.css' ],
+  templateUrl: './hero-search.component.html',
+  styleUrls: [ './hero-search.component.css' ],
   providers: [HeroSearchService]
 })
 
